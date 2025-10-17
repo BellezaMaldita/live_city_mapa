@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <style>
+        html, body, #map { height:100%; margin:0; padding:0; }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    var lat = -33.45;
+    var lon = -70.6667;
+    var zoom = 12;
+
+    var map = L.map('map').setView([lat, lon], zoom);
+
+    var eccho = L.icon({
+      iconUrl: 'eccho.png',
+      iconSize: [60, 60], // ajusta el tamaño a gusto
+      iconAnchor: [30, 50], // dónde “toca” el suelo el ícono
+      popupAnchor: [0, -40] // dónde aparece el popup respecto al ícono
+    });
+
+    var kissi = L.icon({
+      iconUrl: 'kissibao.png',
+      iconSize: [60, 60], // ajusta el tamaño a gusto
+      iconAnchor: [30, 50], // dónde “toca” el suelo el ícono
+      popupAnchor: [0, -40] // dónde aparece el popup respecto al ícono
+    });
+
+    var cupCake = L.icon({
+      iconUrl: 'cupcake.png',
+      iconSize: [60, 60], // ajusta el tamaño a gusto
+      iconAnchor: [30, 50], // dónde “toca” el suelo el ícono
+      popupAnchor: [0, -40] // dónde aparece el popup respecto al ícono
+    });
+
+    var wizard = L.icon({
+      iconUrl: 'wizard.png',
+      iconSize: [60, 60], // ajusta el tamaño a gusto
+      iconAnchor: [30, 50], // dónde “toca” el suelo el ícono
+      popupAnchor: [0, -40] // dónde aparece el popup respecto al ícono
+    });
+
+    var payaso = L.icon({
+      iconUrl: 'payaso.png',
+      iconSize: [60, 60], // ajusta el tamaño a gusto
+      iconAnchor: [30, 50], // dónde “toca” el suelo el ícono
+      popupAnchor: [0, -40] // dónde aparece el popup respecto al ícono
+    });
+
+    // Capa base de OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker([-33.4372, -70.6506], { icon: eccho })
+      .addTo(map)
+      .bindPopup('Tecnología y redes - Punto de innovación y comunicación.')
+      .openPopup();
+
+    L.marker([-33.4569, -70.6483], { icon: kissi })
+      .addTo(map)
+      .bindPopup('Arte y libertad - Espacio de expresión artística para disidencias.')
+      .openPopup();
+
+    L.marker([-33.4450, -70.6620], { icon: cupCake })
+      .addTo(map)
+      .bindPopup('Caféterias esponjosas - Punto de reunión para pasteleros y baristas.')
+      .openPopup();
+
+    L.marker([-33.4800, -70.6110], { icon: wizard })
+      .addTo(map)
+      .bindPopup('Punto mágico - Campañas de Dungeons and Dragons.')
+      .openPopup();
+
+    L.marker([-33.4400, -70.6400], { icon: payaso })
+      .addTo(map)
+      .bindPopup('Plaza Teatro y Poesía - Centro cultural.')
+      .openPopup();
+
+
+
+</script>
+</body>
+</html>
