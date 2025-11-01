@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import cl.sarai.saraimapa.utils.DBHelper;
 
 public class MainActivity extends AppCompatActivity {
@@ -61,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        FloatingActionButton fabRegistrar = findViewById(R.id.fabRegistrar);
+        fabRegistrar.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, RegistroActivity.class);
+            startActivity(intent);
+        });
+
     }
 
     private int validarUsuario(String usuario, String password) {

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/electric_pink"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/wizard" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrate aquí!"
+        android:textColor="@color/electric_yellow"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/edtNuevoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:textColor="@color/electric_blue"
+        android:textColorHint="@color/lilac"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtNuevaPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/electric_blue"
+        android:textColorHint="@color/lilac"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnGuardarUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/electric_green"/>
+</LinearLayout>
