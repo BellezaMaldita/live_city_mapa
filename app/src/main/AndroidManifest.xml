@@ -19,6 +19,12 @@
         <activity
             android:name=".MapaActivity" />
         <activity
+            android:name=".ListaProductosActivity" />
+        <activity
+            android:name=".DetalleCompraActivity" />
+        <activity
+            android:name=".ComprasActivity" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>

@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <color name="black">#FF000000</color> <!-- fondo -->
     <color name="white">#FFFFFFFF</color>
     <color name="indigo">#5432EB</color>
-    <color name="electric_pink">#F412CF</color>
+    <color name="pastel_pink">#F899E1</color>
+    <color name="pastel_orange">#F89B5A</color>
+    <color name="pastel_green">#7CF880</color>
+    <color name="green">#2BB312</color>
+    <color name="red">#F41212</color>
+    <color name="magenta">#F20785</color>
     <color name="lilac">#9D94FD</color>
     <color name="green_mint">#5EFFD3</color>
-    <color name="electric_green">#C4FB0D</color>
-    <color name="electric_yellow">#FFFF00</color>
+    <color name="electric_pink">#F412CF</color> <!-- boton izquierdo -->
+    <color name="electric_green">#88FB0D</color> <!-- boton derecho -->
+    <color name="electric_yellow">#FFFF00</color> <!-- textos en el fondo -->
+    <color name="electric_orange">#F69207</color>
+    <color name="electric_blue">#123CF8</color>
 </resources>

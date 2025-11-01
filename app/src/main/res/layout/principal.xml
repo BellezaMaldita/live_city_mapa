@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@color/indigo">
-
+    android:background="@color/indigo"
+    android:padding="24dp">
 
     <ImageView
         android:id="@+id/imgLogo"
@@ -33,15 +33,34 @@
         android:text="@string/bienvenido"
         android:textColor="@color/electric_green"/>
 
-    <Button
-        android:id="@+id/btnVerMapa"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ver_mapa"
+        android:hint="Usuario"
+        android:textColor="@color/electric_blue"
+        android:textColorHint="@color/electric_blue"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/electric_blue"
+        android:textColorHint="@color/electric_blue"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:textStyle="bold"
         android:backgroundTint="@color/electric_pink"
-        android:textColor="@color/electric_yellow"
-        />
-
-
+        android:textColor="@color/electric_yellow" />
 
 </LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/indigo"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Productos disponibles"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/electric_yellow"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:id="@+id/listaProductos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/txtTitulo"
+        android:layout_above="@+id/layoutBotones"
+        android:divider="@color/green_mint"
+        android:dividerHeight="2dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Contenedor horizontal para los dos botones -->
+    <LinearLayout
+        android:id="@+id/layoutBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnVerTiendas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ver Tiendas"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/pastel_pink"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnGuardarCompra"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guardar Compra"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/electric_green" />
+    </LinearLayout>
+</RelativeLayout>

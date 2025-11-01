@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">SaraiMapa</string>
-    <string name="tittle_name">Live City</string>
+    <string name="app_name">DailyPay</string>
+    <string name="tittle_name">Daily Pay</string>
     <string name="ver_mapa">Ver Mapa aquí!</string>
-    <string name="bienvenido">¡Bienvenido a tu mapa amix!  ¿Dónde irás hoy?</string>
-
+    <string name="bienvenido">¡Bienvenido a Daily Pay!  ¿Qué comprarás hoy?</string>
+    <string name="btn_agregar">Agregar</string>
 </resources>
